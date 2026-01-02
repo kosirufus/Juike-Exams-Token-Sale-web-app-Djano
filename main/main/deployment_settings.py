@@ -9,7 +9,10 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://' + os.environ.get('RENDER_EXTERNAL_HOST')]
+CSRF_TRUSTED_ORIGINS = [
+    'https://juike-exams-token-sale-web-app-django.onrender.com'
+]
+
 
 DEBUG = False
 SECRET_KEY = os.environ.get('SECRET_KEY')
