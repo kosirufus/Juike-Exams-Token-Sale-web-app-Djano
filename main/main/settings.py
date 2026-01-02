@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
-import os
 from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -22,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config("DJANGO_SECRET_KEY")
+SECRET_KEY = config('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -45,17 +44,17 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "tokens",
-    "orders",
+    "main.tokens",
+    "main.orders",
     "corsheaders",
     "rest_framework",
-    "product",
-    "service_section.Payment",
-    "service_section.Serviceorder",
-    "service_section.Serviceproduct",
-    "service_section.Subject",
-    "service_section.Whatsappgroup",
-    "Business",
+    "main.product",
+    "main.service_section.Payment",
+    "main.service_section.Serviceorder",
+    "main.service_section.Serviceproduct",
+    "main.service_section.Subject",
+    "main.service_section.Whatsappgroup",
+    "main.Business",
 ]
 
 MIDDLEWARE = [
