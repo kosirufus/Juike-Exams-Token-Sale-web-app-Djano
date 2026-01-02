@@ -1,7 +1,7 @@
 import os
-from backend.main import dj_database_url
-from .settings import *  
-from .settings import BASE_DIR
+import dj_database_url
+from main.settings import *  
+from main.settings import BASE_DIR
 
 ALLOWED_HOSTS = [
     'juike-exams-token-sale-web-app-django.onrender.com',
