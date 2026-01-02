@@ -4,7 +4,7 @@ from .settings import *
 from .settings import BASE_DIR
 
 ALLOWED_HOSTS = [
-    'https://juike-exams-token-sale-web-app-django.onrender.com',
+    'juike-exams-token-sale-web-app-django.onrender.com',
     'localhost',
     '127.0.0.1',
 ]
