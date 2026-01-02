@@ -4,7 +4,7 @@ from .settings import *
 from .settings import BASE_DIR
 
 ALLOWED_HOSTS = [
-    (os.environ.get('RENDER_EXTERNAL_HOST')),
+    'https://juike-exams-token-sale-web-app-django.onrender.com'
     'localhost',
     '127.0.0.1',
 ]
