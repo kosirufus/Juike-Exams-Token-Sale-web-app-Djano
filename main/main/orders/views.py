@@ -46,7 +46,7 @@ def create_paystack_session(request):
         "email": request.user.email if request.user.is_authenticated else "test@example.com",
         "amount": int(order.amount * 100),  # convert Naira to kobo
         "reference": str(order.reference),  # 🔥 This is the key fix
-        "callback_url": "http://localhost:3000/payment-success",
+        "callback_url": "https://juikeexams.onrender.com/payment-success",
         "metadata": {
             "service_type": "exam_token",
             "order_id": order.id
