@@ -61,7 +61,7 @@ def create_payment(request):
                 "email": order.email,
                 "amount": int(order.amount * 100),  # Kobo
                 "reference": order.reference,
-                "callback_url": f"{settings.FRONTEND_URL}/servicesuccess",
+                "callback_url": "https://juikeexams.onrender.com/servicesuccess",
                 "metadata": {
                     "service_type": "service_booking",
                     "order_id": 123
