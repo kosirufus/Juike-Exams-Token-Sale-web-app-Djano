@@ -48,3 +48,5 @@ DATABASES = {
         conn_max_age=600
     )
 }
+
+PAYSTACK_SECRET_KEY = config('PAYSTACK_SECRET_KEY')
